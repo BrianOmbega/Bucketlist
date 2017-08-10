@@ -2,30 +2,38 @@
 <html>
      <head>
           <title>REGISTER AND GET THE BuckIt APP!</title>
-          <link rel="stylesheet" href="../static/main.css"/>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
      </head>
      <body>
+       <h2 style="text-align:center;">Welcome to the Buckit App</h2>
        <p>Hi there adventure seeker!Always wanted to see the Leaning Tower of Pisa,learn to play an instrument or get lost in the Serengeti?
          The BuckIt App allows you to keep track of and share your goals and planned adventures.
          Register today and instantly create your own bucket list.  </p>
        <form>
-       <div>
-        Email <input type="text" name="email"/>
+       <div class="form-group">
+        <label for="email">Email: </label>
+        <input type="text" id="email" class="form-control col-sm-4"/>
+       </div>
+       <div class="form-group">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" class="form-control"/>
+        <label for="sname">Second Name:</label>
+        <input type="text" id="sname" class="form-control"/>
+       </div>
+       <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" id="pwd" class="form-control"/>
+      <label for="cpwd">Confirm Password:</label>
+      <input type="text" id="cpwd" class="form-control"/>
        </div>
        <div>
-        First Name <input type="text" name="first_name"/>
-        Second Name<input type="text" name="second_name"/>
-       </div>
-       <div>
-      Password<input type="text" name="password"/>
-      Confirm Password  <input type="text" name="confirm_password"/>
-       </div>
-       <div>
-       <button type="button" name="submit">Submit</button>
+       <button type="submit" class="btn btn-primary">Submit</button>
        </div>
      </form>
 
-     <div>
+     <div class="container">
         Already Registered? Please log in  <a href="login.html">here</a>
      </div>
      </body>
