@@ -2,65 +2,222 @@
 <html>
      <head>
           <title>CREATE YOUR BUCKETLIST HERE</title>
-          <link rel="stylesheet" href="../static/main_create.css"/>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+          <link rel="stylesheet" href="../static/main.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
      </head>
      <body>
-       <p> Create you Bucketlist here,Knock yourself out!
+     <div class="container">
+          <div class="icon-bar">
+              <a href="home.html"><i class="fa fa-home"></i></a>
+              <a class="active" href="create.html"><i class="fa fa-cubes"></i></a>
+              <a href="view.html"><i class="fa fa-search"></i></a>
+              <a href="add.html"><i class="fa fa-plus"></i></a>
+              <a href="#"><i class="fa fa-wrench"></i></a>
+              <a href="login.html"><i class="fa fa-power-off"></i></a>
+              </div>
+        <div class="well well-bg lead">
+             <p class="text-primary text-center">
+               You can create your own bucket list here, knock yourself out!
+             </p>
 
-       </p>
-          <div>
-              First goal <input type="text" name="first_g"/>
-              Achieve goal by <input type="text" name="achieve1"/>
-          </div>
-          <div>
-            Second goal <input type="text" name="second_g"/>
-              Achieve goal by <input type="text" name="achieve2"/>
-
-          </div>
-          <div>
-            Third goal <input type="text" name="third_g"/>
-              Achieve goal by <input type="text" name="achieve3"/>
-          </div>
-          <div>
-            Fourth goal <input type="text" name="fourth_g"/>
-              Achieve goal by <input type="text" name="achieve4"/>
-          </div>
-          <div>
-            Fifth goal <input type="text" name="fifth_g"/>
-              Achieve goal by <input type="text" name="achieve5"/>
-          </div>
-          <div>
-              Sixth goal <input type="text" name="sixth_g"/>
-                Achieve goal by <input type="text" name="achieve6"/>
-          </div>
-          <div>
-            Seventh goal <input type="text" name="seventh_g"/>
-              Achieve goal by <input type="text" name="achieve7"/>
-          </div>
-          <div>
-            Eighth goal <input type="text" name="eighth_g"/>
-              Achieve goal by <input type="text" name="achieve8"/>
-          </div>
-          <div>
-            Ninth goal <input type="text" name="ninth_g"/>
-              Achieve goal by <input type="text" name="achieve9"/>
-          </div>
-          <div>
-            Tenth goal <input type="text" name="tenth_g"/>
-            Achieve goal by <input type="text" name="achieve10"/>
-          </div>
-          <div>
-          Save Bucket list as <input type="text" name="save_as"/>
-
-          </div>
+        </div>
 
 
-          <div>
-          <button type="button" name="create">CREATE BUCKETLIST</button>
+
+
+       <form>
+
+
+            <div class="form-group">
+               <label>Goal or Experience</label>
+               <input type="text" name="first_g" class="form-control"/>
+               <label>Requirements to achieve goal</label><input type="text"
+               class="form-control" placeholder="Please include some typical requirements needed to achieve this goal" />
+               <label>Estimated cost in Kenyan Shillings:</label>
+               <select class="form-control" id="sel1">
+               <option>0 - 200,000</option>
+               <option>200,001 - 400,000</option>
+               <option>400,001 - 600,000</option>
+               <option>600,001 - 800,000 </option>
+               <option>800,001 - 1,000,000</option>
+               <<option>Above 1,000,000</option>
+               </select>
+               <label>Achieve goal by</label> <input type="date" name="achieve1" class="form-control"/>
+           </div>
+           <hr/>
+           <div class="form-group">
+              <label>Goal or Experience</label>
+              <input type="text" name="first_g" class="form-control"/>
+              <label>Requirements to achieve goal</label><input type="text"
+              class="form-control" placeholder="Please include some typical requirements needed to achieve this goal" />
+              <label>Estimated cost in Kenyan Shillings:</label>
+              <select class="form-control" id="sel1">
+              <option>0 - 200,000</option>
+              <option>200,001 - 400,000</option>
+              <option>400,001 - 600,000</option>
+              <option>600,001 - 800,000 </option>
+              <option>800,001 - 1,000,000</option>
+              <<option>Above 1,000,000</option>
+              </select>
+              <label>Achieve goal by</label> <input type="date" name="achieve1" class="form-control"/>
+          </div>
+          <hr />
+          <div class="form-group">
+             <label>Goal or Experience</label>
+             <input type="text" name="first_g" class="form-control"/>
+             <label>Requirements to achieve goal</label><input type="text"
+             class="form-control" placeholder="Please include some typical requirements needed to achieve this goal" />
+             <label>Estimated cost in Kenyan Shillings:</label>
+             <select class="form-control" id="sel1">
+             <option>0 - 200,000</option>
+             <option>200,001 - 400,000</option>
+             <option>400,001 - 600,000</option>
+             <option>600,001 - 800,000 </option>
+             <option>800,001 - 1,000,000</option>
+             <<option>Above 1,000,000</option>
+             </select>
+             <label>Achieve goal by</label> <input type="date" name="achieve1" class="form-control"/>
+         </div>
+         <hr />
+         <div class="form-group">
+           <label>Goal or Experience</label>
+           <input type="text" name="first_g" class="form-control"/>
+           <label>Requirements to achieve goal</label><input type="text"
+           class="form-control" placeholder="Please include some typical requirements needed to achieve this goal" />
+           <label>Estimated cost in Kenyan Shillings:</label>
+           <select class="form-control" id="sel1">
+           <option>0 - 200,000</option>
+           <option>200,001 - 400,000</option>
+           <option>400,001 - 600,000</option>
+           <option>600,001 - 800,000 </option>
+           <option>800,001 - 1,000,000</option>
+           <<option>Above 1,000,000</option>
+           </select>
+           <label>Achieve goal by</label> <input type="date" name="achieve1" class="form-control"/>
+       </div>
+       <hr />
+       <div class="form-group">
+         <label>Goal or Experience</label>
+         <input type="text" name="first_g" class="form-control"/>
+         <label>Requirements to achieve goal</label><input type="text"
+         class="form-control" placeholder="Please include some typical requirements needed to achieve this goal" />
+         <label>Estimated cost in Kenyan Shillings:</label>
+         <select class="form-control" id="sel1">
+         <option>0 - 200,000</option>
+         <option>200,001 - 400,000</option>
+         <option>400,001 - 600,000</option>
+         <option>600,001 - 800,000 </option>
+         <option>800,001 - 1,000,000</option>
+         <<option>Above 1,000,000</option>
+         </select>
+         <label>Achieve goal by</label> <input type="date" name="achieve1" class="form-control"/>
+      </div>
+      <hr />
+      <div class="form-group">
+         <label>Goal or Experience</label>
+         <input type="text" name="first_g" class="form-control"/>
+         <label>Requirements to achieve goal</label><input type="text"
+         class="form-control" placeholder="Please include some typical requirements needed to achieve this goal" />
+         <label>Estimated cost in Kenyan Shillings:</label>
+         <select class="form-control" id="sel1">
+         <option>0 - 200,000</option>
+         <option>200,001 - 400,000</option>
+         <option>400,001 - 600,000</option>
+         <option>600,001 - 800,000 </option>
+         <option>800,001 - 1,000,000</option>
+         <<option>Above 1,000,000</option>
+         </select>
+         <label>Achieve goal by</label> <input type="date" name="achieve1" class="form-control"/>
+    </div>
+    <hr />
+    <div class="form-group">
+       <label>Goal or Experience</label>
+       <input type="text" name="first_g" class="form-control"/>
+       <label>Requirements to achieve goal</label><input type="text"
+       class="form-control" placeholder="Please include some typical requirements needed to achieve this goal" />
+       <label>Estimated cost in Kenyan Shillings:</label>
+       <select class="form-control" id="sel1">
+       <option>0 - 200,000</option>
+       <option>200,001 - 400,000</option>
+       <option>400,001 - 600,000</option>
+       <option>600,001 - 800,000 </option>
+       <option>800,001 - 1,000,000</option>
+       <<option>Above 1,000,000</option>
+       </select>
+       <label>Achieve goal by</label> <input type="date" name="achieve1" class="form-control"/>
+   </div>
+   <hr />
+   <div class="form-group">
+      <label>Goal or Experience</label>
+      <input type="text" name="first_g" class="form-control"/>
+      <label>Requirements to achieve goal</label><input type="text"
+      class="form-control" placeholder="Please include some typical requirements needed to achieve this goal" />
+      <label>Estimated cost in Kenyan Shillings:</label>
+      <select class="form-control" id="sel1">
+      <option>0 - 200,000</option>
+      <option>200,001 - 400,000</option>
+      <option>400,001 - 600,000</option>
+      <option>600,001 - 800,000 </option>
+      <option>800,001 - 1,000,000</option>
+      <<option>Above 1,000,000</option>
+      </select>
+      <label>Achieve goal by</label> <input type="date" name="achieve1" class="form-control"/>
+  </div>
+  <hr />
+  <div class="form-group">
+    <label>Goal or Experience</label>
+    <input type="text" name="first_g" class="form-control"/>
+    <label>Requirements to achieve goal</label><input type="text"
+    class="form-control" placeholder="Please include some typical requirements needed to achieve this goal" />
+    <label>Estimated cost in Kenyan Shillings:</label>
+    <select class="form-control" id="sel1">
+    <option>0 - 200,000</option>
+    <option>200,001 - 400,000</option>
+    <option>400,001 - 600,000</option>
+    <option>600,001 - 800,000 </option>
+    <option>800,001 - 1,000,000</option>
+    <<option>Above 1,000,000</option>
+    </select>
+    <label>Achieve goal by</label> <input type="date" name="achieve1" class="form-control"/>
+</div>
+<hr />
+<div class="form-group">
+   <label>Goal or Experience</label>
+   <input type="text" name="first_g" class="form-control"/>
+   <label>Requirements to achieve goal</label><input type="text"
+   class="form-control" placeholder="Please include some typical requirements needed to achieve this goal" />
+   <label>Estimated cost in Kenyan Shillings:</label>
+   <select class="form-control" id="sel1">
+   <option>0 - 200,000</option>
+   <option>200,001 - 400,000</option>
+   <option>400,001 - 600,000</option>
+   <option>600,001 - 800,000 </option>
+   <option>800,001 - 1,000,000</option>
+   <<option>Above 1,000,000</option>
+   </select>
+   <label>Achieve goal by</label> <input type="date" name="achieve1" class="form-control"/>
+</div>
+<hr />
+          <div class="well well-lg">
+               Now click the "create bucketlist" button and Viola! you're done
           </div>
 
+          <div>
+          <button type="submit" id="create" class="btn btn-danger">CREATE BUCKETLIST</button>
+          </div>
+          <br /><br />
+          <div class="well">
+               That was easy, right? Please give us a <span class="glyphicon glyphicon-thumbs-up"/> on Facebook
+               to let your friends know about us.
+          </div>
 
+     </form>
+</div>
 
 
 

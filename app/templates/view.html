@@ -2,30 +2,55 @@
 <html>
      <head>
           <title>VIEW YOUR BUCKETLISTS</title>
-          <link rel="stylesheet" href="../static/main_create.css"/>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+          <link rel="stylesheet" href="../static/main.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
      </head>
      <body>
-       Type the names of the bucketlists you want to view here
-          <div>
-              <input type="text" name="view1"/>
-          </div>
-          <div>
-              <input type="text" name="view2"/>
-          </div>
-          <div>
-              <input type="text" name="view3"/>
-          </div>
-          <div>
-              <input type="text" name="view4"/>
-          </div>
-          <div>
-              <input type="text" name="view5"/>
-          </div>
-          <div>
-              <button type="button" name="view">VIEW BUCKETLISTS</button>
-              
-          </div>
+          <div class="container">
+               <div class="icon-bar">
+                   <a href="home.html"><i class="fa fa-home"></i></a>
+                   <a href="create.html"><i class="fa fa-cubes"></i></a>
+                   <a class="active" href="view.html"><i class="fa fa-search"></i></a>
+                   <a href="add.html"><i class="fa fa-plus"></i></a>
+                   <a href="#"><i class="fa fa-wrench"></i></a>
+                   <a href="login.html"><i class="fa fa-power-off"></i></a>
+                   </div>
+               <div class="well well-lg well-priimary">
+                    <p class="lead text-primary">
+                    Type the names of the bucketlists you want to view here
+                   </p>
+               </div>
 
+       <form>
+
+
+          <div>
+              <input type="text" name="view1" class="form-control"/><br/><br />
+          </div>
+          <div>
+              <input type="text" name="view2" class="form-control"/><br /><br />
+          </div>
+          <div>
+              <input type="text" name="view3" class="form-control"/><br /><br />
+          </div>
+          <div>
+              <input type="text" name="view4" class="form-control"/><br /><br />
+          </div>
+          <div>
+              <input type="text" name="view5" class="form-control"/><br /><br />
+          </div>
+          <div>
+              <button type="submit" name="view" class="btn btn-warning">VIEW BUCKETLISTS</button>
+
+         </div><br /><br /><br />
+          <div class="container-fluid">
+               Give us a  <span class="glyphicon glyphicon-thumbs-up"/> on Facebook.
+          </div>
+     </div>
+</form>
      </body>
 
 

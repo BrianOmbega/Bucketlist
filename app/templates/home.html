@@ -2,18 +2,34 @@
 <html>
      <head>
           <title>HOME</title>
-          <link rel="stylesheet" href="../static/main.css">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+          <link rel="stylesheet" href="../static/main.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
      </head>
            <body>
-                <p> Welcome to the BuckIt App.
-                  You can create, view and add items to existing bucket lists by clicking on the links below.
-                <div>
-                   <a href="create.html">CREATE</a>
-                </div>
-                <div>
-                  <a href="view.html">VIEW</a>
-                </div>
+                <div class="container">
 
+                     <div class="icon-bar">
+                         <a class="active"href="home.html"><i class="fa fa-home"></i></a>
+                         <a href="create.html"><i class="fa fa-cubes"></i></a>
+                         <a href="view.html"><i class="fa fa-search"></i></a>
+                         <a href="add.html"><i class="fa fa-plus"></i></a>
+                         <a href="#"><i class="fa fa-wrench"></i></a>
+                         <a href="login.html"><i class="fa fa-power-off"></i></a>
+                         </div>
+
+                <h2 class="text-primary text-center">Welcome to the BuckIt App</h2>
+                  <h4>Create,view and add items to existing bucket lists by
+                  clicking on the buttons below.</h4>
+                <div>
+                   <a href ="create.html" role="button" class="btn btn-primary btn-block">CREATE A BUCKETLIST</a>
+                </div>
+                <div>
+                   <a href ="view.html" role="button" class="btn btn-success btn-block">VIEW MY BUCKETLIST</a>
+                </div>
+           </div>
            </body>
 </html>

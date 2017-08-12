@@ -3,39 +3,41 @@
      <head>
           <title>REGISTER AND GET THE BuckIt APP!</title>
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
      </head>
      <body>
-       <h2 style="text-align:center;">Welcome to the Buckit App</h2>
-       <p>Hi there adventure seeker!Always wanted to see the Leaning Tower of Pisa,learn to play an instrument or get lost in the Serengeti?
+       <div class="container">
+       <h2 class="text-center text-success">Welcome to the Buckit App</h2>
+       <p><strong class="lead">Hi there adventure seeker!Always wanted to see the Leaning Tower of Pisa,learn to play an instrument or get lost in the Serengeti?
          The BuckIt App allows you to keep track of and share your goals and planned adventures.
-         Register today and instantly create your own bucket list.  </p>
+         Register today and instantly create your own bucket list.</strong>  </p>
        <form>
        <div class="form-group">
-        <label for="email">Email: </label>
+        <label for="email" class="text-primary"><span class="glyphicon glyphicon-envelope"/> EMAIL:</label>
         <input type="text" id="email" class="form-control col-sm-4"/>
        </div>
        <div class="form-group">
-        <label for="fname">First Name:</label>
+        <label for="fname" class="text-primary"><span class="glyphicon glyphicon-user"> FULL NAME:</label>
         <input type="text" id="fname" class="form-control"/>
-        <label for="sname">Second Name:</label>
-        <input type="text" id="sname" class="form-control"/>
        </div>
        <div class="form-group">
-      <label for="pwd">Password:</label>
+      <label for="pwd" class="text-primary">Password:</label>
       <input type="password" id="pwd" class="form-control"/>
-      <label for="cpwd">Confirm Password:</label>
-      <input type="text" id="cpwd" class="form-control"/>
+      <label for="cpwd" class="text-primary"> Confirm Password:</label>
+      <input type="password" id="cpwd" class="form-control"/>
        </div>
        <div>
-       <button type="submit" class="btn btn-primary">Submit</button>
+       <button type="submit" class="btn btn-danger">Submit</button>
        </div>
      </form>
 
      <div class="container">
-        Already Registered? Please log in  <a href="login.html">here</a>
+        Already Registered? Please log in  <a href="login.html">here</a> <br/><br/>
+        Give us a <span class="glyphicon glyphicon-thumbs-up"> on Facebook
      </div>
+   </div>
      </body>
 
 
